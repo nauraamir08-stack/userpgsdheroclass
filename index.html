@@ -1,4 +1,16 @@
-<!doctype html><html lang="id"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="theme-color" content="#101c3a"><title>Home — HERO CLASS</title>
+<!doctype html><html lang="id"><head>
+<script>
+(function () {
+  if (window.location.pathname.endsWith('/index.html')) {
+    var cleanPath = window.location.pathname.replace(/\/index\.html$/, '/');
+    window.location.replace(
+      window.location.origin + cleanPath +
+      window.location.search + window.location.hash
+    );
+  }
+})();
+</script>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="theme-color" content="#101c3a"><title>Home — HERO CLASS</title>
   <link rel="stylesheet" href="style.css">
 </head><body>
 <div class="welcome-overlay" id="welcomeOverlay" role="dialog" aria-modal="true" aria-label="Selamat datang">
@@ -9,9 +21,9 @@
     <p>Tempat kami belajar, bertumbuh, dan menyimpan perjalanan bersama.</p>
   </div>
 </div>
-<div class="gravity-bg" aria-hidden="true"><i></i><i></i><i></i></div><nav><a class="brand" href="index.html"><img src="logo-hero-class.png"><span>HERO <em>CLASS</em></span></a><div class="navlinks"><a class="active" href="index.html">HOME</a><a class="" href="class.html">CLASS</a><a class="" href="events.html">EVENTS</a><a class="" href="memories.html">MEMORIES</a><a class="" href="corner.html">CLASS CORNER</a></div></nav><header class="hero"><div class="hero-inner"><div>
+<div class="gravity-bg" aria-hidden="true"><i></i><i></i><i></i></div><nav><a class="brand" href="index.html"><img src="logo-hero-class.png"><span>HERO <em>CLASS</em></span></a><div class="navlinks"><a class="active" href="index.html">HOME</a><a class="" href="class/">CLASS</a><a class="" href="events/">EVENTS</a><a class="" href="memories/">MEMORIES</a><a class="" href="corner/">CLASS CORNER</a></div></nav><header class="hero"><div class="hero-inner"><div>
 <div class="eyebrow" id="homeEyebrow">PGSD H 2026 • UNESA</div><h1 id="homeTitle">HERO<br><span>CLASS.</span></h1>
-<p class="lead" id="homeLead"></p>
+<p class="lead" id="homeLead">Satu kelas, banyak cerita. Tempat kami belajar, bertumbuh, dan menyimpan perjalanan bersama.</p>
 </div>
 </div><div class="hero-art"><img class="hero-logo" src="logo-hero-class.png"><div class="sticker st1">PGSD H 2026 ✦</div><div class="sticker st2">ONE CLASS, MANY STORIES</div><div class="sticker st3">UNESA • 2026</div></div></div></header>
 <div class="ticker"><div class="ticker-track">
@@ -20,17 +32,17 @@
 </div></div>
 <div class="notice-panel"><img class="notice-logo" src="logo-hero-class.png" alt="Logo HERO CLASS"><div class="notice-copy"><span class="notice-kicker">HERO CLASS • ANNOUNCEMENT</span><span class="notice-title" id="announcementTitle">PPPK Day 2</span><span class="notice-text" id="announcementText">19 September 2026 • 06.00 WIB • Zona Selingkup FIP UNESA &amp; Lab Merdeka.</span></div><span class="notice-dot" aria-hidden="true"></span></div>
 <div class="quick">
-<a class="card" href="class.html"><div class="quick-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M22 21v-2a4 4 0 0 0-3-3.87M16 3.13a4 4 0 0 1 0 7.75"/></svg></div><b>37</b><span>MEMBERS</span><div class="mini">Meet the people →</div></a>
-<a class="card" href="events.html"><div class="quick-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="4" width="18" height="17" rx="3"/><path d="M16 2v4M8 2v4M3 10h18"/><path d="M8 14h3M8 17h5"/></svg></div><b>01</b><span>UPCOMING</span><div class="mini">See our events →</div></a>
-<a class="card" href="memories.html"><div class="quick-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="5" width="18" height="15" rx="3"/><circle cx="8.5" cy="10" r="1.5"/><path d="m5 17 4.5-4 3.2 2.7 2.2-2.1L20 18"/></svg></div><b>2026</b><span>OUR STORY</span><div class="mini">Open memories →</div></a>
-<a class="card" href="corner.html"><div class="quick-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3 14 9l6 3-6 3-2 6-2-6-6-3 6-3 2-6Z"/><path d="m19 3 .6 1.7L21 5.3l-1.4.6L19 7.5l-.6-1.6-1.4-.6 1.4-.6L19 3Z"/></svg></div><b>∞</b><span>CLASS CORNER</span><div class="mini">Fun stuff inside →</div></a>
+<a class="card" href="class/"><div class="quick-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M22 21v-2a4 4 0 0 0-3-3.87M16 3.13a4 4 0 0 1 0 7.75"/></svg></div><b>37</b><span>MEMBERS</span><div class="mini">Meet the people →</div></a>
+<a class="card" href="events/"><div class="quick-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="4" width="18" height="17" rx="3"/><path d="M16 2v4M8 2v4M3 10h18"/><path d="M8 14h3M8 17h5"/></svg></div><b>01</b><span>UPCOMING</span><div class="mini">See our events →</div></a>
+<a class="card" href="memories/"><div class="quick-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="5" width="18" height="15" rx="3"/><circle cx="8.5" cy="10" r="1.5"/><path d="m5 17 4.5-4 3.2 2.7 2.2-2.1L20 18"/></svg></div><b>2026</b><span>OUR STORY</span><div class="mini">Open memories →</div></a>
+<a class="card" href="corner/"><div class="quick-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3 14 9l6 3-6 3-2 6-2-6-6-3 6-3 2-6Z"/><path d="m19 3 .6 1.7L21 5.3l-1.4.6L19 7.5l-.6-1.6-1.4-.6 1.4-.6L19 3Z"/></svg></div><b>∞</b><span>CLASS CORNER</span><div class="mini">Fun stuff inside →</div></a>
 </div>
 <section><div class="wrap"><div class="section-title">📢 What's Happening?</div><p class="sub">Sedikit update dari HERO CLASS.</p><div class="card notice"><span class="date" id="announcementDate">19 SEPTEMBER 2026</span><span class="arrow">→</span><h3 id="announcementTitle2">PPPK Day 2</h3><p id="announcementTime">06.00 WIB — Zona Selingkup FIP UNESA &amp; Lab Merdeka.</p></div></div></section>
 <section style="padding-top:0"><div class="wrap"><div class="section-title">✨ Explore Our Class</div><p class="sub">Pilih bagian yang ingin kamu lihat.</p><div class="grid explore-grid">
-<a class="card explore-card" href="class.html"><div class="explore-inner"><div><div class="explore-top"><div class="explore-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M22 21v-2a4 4 0 0 0-3-3.87M16 3.13a4 4 0 0 1 0 7.75"/></svg></div><span class="explore-num">01 / 04</span></div><h3>Class</h3><p>Kenalan dengan anggota dan struktur kelas.</p></div><div class="explore-link"><span>Meet the class</span><span class="explore-arrow">→</span></div></div></a>
-<a class="card explore-card" href="events.html"><div class="explore-inner"><div><div class="explore-top"><div class="explore-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="4" width="18" height="17" rx="3"/><path d="M16 2v4M8 2v4M3 10h18"/><path d="M8 14h3M8 17h5"/></svg></div><span class="explore-num">02 / 04</span></div><h3>Events</h3><p>Lihat kegiatan dan momen penting kelas.</p></div><div class="explore-link"><span>See events</span><span class="explore-arrow">→</span></div></div></a>
-<a class="card explore-card" href="memories.html"><div class="explore-inner"><div><div class="explore-top"><div class="explore-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="5" width="18" height="15" rx="3"/><circle cx="8.5" cy="10" r="1.5"/><path d="m5 17 4.5-4 3.2 2.7 2.2-2.1L20 18"/></svg></div><span class="explore-num">03 / 04</span></div><h3>Memories</h3><p>Dokumentasi perjalanan HERO CLASS.</p></div><div class="explore-link"><span>Open memories</span><span class="explore-arrow">→</span></div></div></a>
-<a class="card explore-card" href="corner.html"><div class="explore-inner"><div><div class="explore-top"><div class="explore-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3 14 9l6 3-6 3-2 6-2-6-6-3 6-3 2-6Z"/><path d="m19 3 .6 1.7L21 5.3l-1.4.6L19 7.5l-.6-1.6-1.4-.6 1.4-.6L19 3Z"/></svg></div><span class="explore-num">04 / 04</span></div><h3>Class Corner</h3><p>Birthday, quotes, fun facts, dan hal random.</p></div><div class="explore-link"><span>Enter corner</span><span class="explore-arrow">→</span></div></div></a>
+<a class="card explore-card" href="class/"><div class="explore-inner"><div><div class="explore-top"><div class="explore-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M22 21v-2a4 4 0 0 0-3-3.87M16 3.13a4 4 0 0 1 0 7.75"/></svg></div><span class="explore-num">01 / 04</span></div><h3>Class</h3><p>Kenalan dengan anggota dan struktur kelas.</p></div><div class="explore-link"><span>Meet the class</span><span class="explore-arrow">→</span></div></div></a>
+<a class="card explore-card" href="events/"><div class="explore-inner"><div><div class="explore-top"><div class="explore-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="4" width="18" height="17" rx="3"/><path d="M16 2v4M8 2v4M3 10h18"/><path d="M8 14h3M8 17h5"/></svg></div><span class="explore-num">02 / 04</span></div><h3>Events</h3><p>Lihat kegiatan dan momen penting kelas.</p></div><div class="explore-link"><span>See events</span><span class="explore-arrow">→</span></div></div></a>
+<a class="card explore-card" href="memories/"><div class="explore-inner"><div><div class="explore-top"><div class="explore-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="5" width="18" height="15" rx="3"/><circle cx="8.5" cy="10" r="1.5"/><path d="m5 17 4.5-4 3.2 2.7 2.2-2.1L20 18"/></svg></div><span class="explore-num">03 / 04</span></div><h3>Memories</h3><p>Dokumentasi perjalanan HERO CLASS.</p></div><div class="explore-link"><span>Open memories</span><span class="explore-arrow">→</span></div></div></a>
+<a class="card explore-card" href="corner/"><div class="explore-inner"><div><div class="explore-top"><div class="explore-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3 14 9l6 3-6 3-2 6-2-6-6-3 6-3 2-6Z"/><path d="m19 3 .6 1.7L21 5.3l-1.4.6L19 7.5l-.6-1.6-1.4-.6 1.4-.6L19 3Z"/></svg></div><span class="explore-num">04 / 04</span></div><h3>Class Corner</h3><p>Birthday, quotes, fun facts, dan hal random.</p></div><div class="explore-link"><span>Enter corner</span><span class="explore-arrow">→</span></div></div></a>
 </div></div></section>
 <footer><strong>HERO CLASS — PGSD H 2026</strong><p><span>Learn together. Grow together. Make memories.</span></p></footer>
   <script src="config.js"></script><script src="main.js"></script><script src="data.js"></script><script src="home.js"></script>

@@ -5,12 +5,25 @@
   };
   window.heroFallback=fallback;
   window.heroDBReady=function(cb){ if(window.HERO_DB) cb(window.HERO_DB); else document.addEventListener('hero-db-ready',()=>cb(window.HERO_DB),{once:true}); };
+  window.heroWhenReady=function(cb){
+    if(window.HERO_DB) return cb(window.HERO_DB);
+    const url=window.HERO_CONFIG?.SUPABASE_URL||'';
+    if(url && !url.includes('YOUR-PROJECT')) return document.addEventListener('hero-db-ready',()=>cb(window.HERO_DB),{once:true});
+    cb(null);
+  };
   window.heroQuery=async function(table,opts={}){
     if(!window.HERO_DB) return {data:null,error:null};
     let q=window.HERO_DB.from(table).select(opts.select||'*');
     if(opts.order) q=q.order(opts.order,{ascending:opts.ascending!==false});
     if(opts.limit) q=q.limit(opts.limit);
     return await q;
+  };
+
+  window.heroStorageUrl=function(bucket,value){
+    if(!value) return '';
+    if(/^https?:\/\//i.test(value)) return value;
+    if(!window.HERO_DB) return value;
+    return window.HERO_DB.storage.from(bucket).getPublicUrl(value).data.publicUrl||'';
   };
   window.heroContent=async function(){
     if(!window.HERO_DB) return fallback;
